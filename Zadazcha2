@@ -1,0 +1,15 @@
+a = int(input("Введите номер месте(1-4)"))
+b = "верхнее"
+c = "нижнее"
+d = "купе"
+e = "боковое"
+if a == 1:
+    print(b, d)
+elif a == 2:
+    print(b, e)
+elif a == 3:
+    print(c, d)
+elif a == 4:
+    print(c, e)
+else:
+    print("Нет такого мета")
