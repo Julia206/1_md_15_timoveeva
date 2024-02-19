@@ -1,0 +1,28 @@
+a = "Красный"
+b = "Синий"
+c = "Жёлтый"
+d = "Фиолетовый"
+e = "Оранжевый"
+f = "Зелёный"
+k = input("Введите первый из трёх основный цветов:Красный,Синий,Жёлтый")
+l = input("Введите второй из трёх основный цветов:Красный,Синий,Жёлтый")
+if k == a and l == b:
+    print(d)
+elif k == b and l == a:
+    print(d)
+elif k == a and l == c:
+    print(e)
+elif  k == c and l == a:
+    print(e)
+elif k == b and l == c:
+    print(f)
+elif k == c and l == b:
+    print(f)
+elif k == a and l == a:
+    print(a)
+elif k == b and l == b:
+    print(b)
+elif k == c and l == c:
+    print(c)
+else:
+    print("Ошибка")
