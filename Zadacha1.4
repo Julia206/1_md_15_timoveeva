@@ -1,0 +1,21 @@
+import random
+m = "Правильный ответ"
+l = "Ответ не правильный"
+j = "Игра окончена."
+d = "Правильных ответов:"
+f = 0
+k = 0
+while k < 3:
+    a = random.randint(0,99)
+    b = random.randint(0,99)
+    print(a, "+", b, "=")
+    n=int(input("Введите ответ"))
+    print(a, "+", b, "=", n)
+    if a + b == n:
+        print(m)
+        f = f + 1
+    else:
+        print(l)
+        k = k + 1
+else:
+    print(j, d, f)
