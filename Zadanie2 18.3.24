@@ -1,0 +1,15 @@
+a = 100
+b = int(input("Введите число на которое будет делится 100"))
+c = a / b
+g = "Делить на 0 нельзя"
+if b != 0:
+    print(c)
+else:
+    try:
+        b = 0
+        c = a / b
+    except ZeroDivisionError:
+        c = 0
+        print(g)
+
+        Подправить
