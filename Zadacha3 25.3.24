@@ -1,0 +1,52 @@
+k = ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"]
+g = []
+m = "Ваши выходные дни:"
+l = "Ваши рабочие дни:"
+n = int(input("Введите число желаемых выходных на неделе"))
+k.reverse()
+g = k.copy()
+if n == 0:
+    print(m,"0")
+    print(l, g)
+elif n == 1:
+    del k[1:7]
+    del g[0]
+    g.reverse()
+    print(m, k)
+    print(l, g)
+elif n == 2:
+    del k[2:7]
+    del g[0:2]
+    g.reverse()
+    print(m, k)
+    print(l, g)
+elif n == 3:
+    del k[3:7]
+    del g[0:3]
+    g.reverse()
+    print(m, k)
+    print(l, g)
+elif n == 4:
+    del k[4:7]
+    del g[0:4]
+    g.reverse()
+    print(m, k)
+    print(l, g)
+elif n == 5:
+    del k[5:7]
+    del g[0:5]
+    g.reverse()
+    print(m, k)
+    print(l, g)
+elif n == 6:
+    del k[6:7]
+    del g[0:6]
+    g.reverse()
+    print(m, k)
+    print(l, g)
+else:
+    del k[7:7]
+    del g[0:7]
+    g.reverse()
+    print(m, k)
+    print(l, g)
